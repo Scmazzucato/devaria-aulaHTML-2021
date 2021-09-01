@@ -8,6 +8,7 @@
         <meta http-equiv="refresh" content="5000">
         <meta name="viewport" content="width=device-width, inicial-scale=1.0">
         <link rel="stylesheet" href="public/css/devaria.css"/>
+        <link rel="stylesheet" href="public/css/faleconosco.css"/>
         <link rel="stylesheet" href="public/css/header.css"/>
         <link rel="stylesheet" href="public/css/footer.css"/>
         <title>Fale Conosco</title>
@@ -21,27 +22,30 @@
                     <ul>
                     <li><a href="Professores.html">Professores</a></li>
                     <li><a href="FaleConosco.html">Fale Conosco</a></li>
-                    <li><a href="DevStar.html">DevStars</a></li>
+                    <li><a href="DevStars.html">DevStars</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="text-center">
-            <h1>Fale com a Devaria atráves dessa página</h1>
-            <h2>Para mandar uma mensagem para a Devaria preencha abaixo e clique em enviar</h2>
+        <main>
+            <h1 class="title text-center">Fale com a Devaria atráves dessa página</h1>
+            <h2 class="sub-title text-center">Para mandar uma mensagem para a Devaria preencha abaixo e clique em enviar</h2>
             <section>
-                <form action="index.html">
-                    <p>
+                <form action="index.html" class="contact-form margin-horizontal-20px">
+                    <div>
                         <label>Nome:</label><input type="text" name="Nome" maxlength="60"/>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <label>E-mail:</label><input type="text" name="Email" maxlength="30"/>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
+                        <label>Comentário:</label>
+                        <textarea name="Comentario" rows="4" cols="50"></textarea>
+                    </div>
+                    <div>
                         <label>Sexo:</label>
-                        <input type="radio" name="Sexo"/><label>Feminino</label>
-                        <input type="radio" name="Sexo"/><label>Masculino</label>
-                        <input type="radio" name="Sexo"/><label>Outro</label>
-                    </p>
+                        <input type="radio" name="Sexo"/><span>Feminino</span>
+                        <input type="radio" name="Sexo"/><span>Masculino</span>
+                    </div>
                         <label>Aonde nos conheceu?</label>
                     <select name="Conheceu">
                         <option selected>Youtube</option>
@@ -49,18 +53,15 @@
                         <option>Amigos</option>
                         <option>Outros</option>
                     </select>
-                    <p>
-                        <label>Comentário:</label>
-                        <textarea name="Comentario" rows="4" cols="50"></textarea>
-                    </p>
-                    <p>
+                
+                    <div>
                         <input type="checkbox" name="Novidades" value="Aceite"/>
-                        <lavel>Aceito receber e-mails de novidades</lavel>
-                    </p>
-                    <p>
+                        <span>Aceito receber e-mails de novidades</span>
+                    </div>
+                    <div>
                         <input type="submit" name="Enviar" value="Enviar"/>
                         <input type="reset" name="Limpar" value="Limpar"/>
-                    </p>
+                    </div>
                 </form>
             </section>
         </main>
